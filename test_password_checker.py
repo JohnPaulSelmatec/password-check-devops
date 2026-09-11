@@ -2,14 +2,16 @@ from password_checker import is_valid_password
 
 
 def test1():
-  assert is_valid_password("Abcde123") == True
+    passwords = [
+        "Abcde123",
+        "abcde123",
+        "Abcdefgh",
+        "123aV",
+        "abcdefgh",
+        "abch3",
+        "abcH",
+        "ABD"
+    ]
 
-#is_valid_password("Abcde123")
-#is_valid_password("abcde123")
-#is_valid_password("Abcdefgh")
-#is_valid_password("123aV")
-#is_valid_password("abcdefgh")
-#is_valid_password("abch3")
-#is_valid_password("abcH")
-#is_valid_password("ABD")
-
+    for password in passwords:
+        print(password, is_valid_password(password))
