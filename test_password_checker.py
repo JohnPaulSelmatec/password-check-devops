@@ -1,4 +1,4 @@
- from password_checker.py import is_valid_password
+from password_checker.py import is_valid_password
 
 
 is_valid_password("Abcde123")
