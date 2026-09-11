@@ -1,3 +1,6 @@
+import is_valid_password from password_checker.py
+
+
 is_valid_password("Abcde123")
 is_valid_password("abcde123")
 is_valid_password("Abcdefgh")
